@@ -11,6 +11,10 @@ spec:
     metadata:
       labels:
         app: hello-world-api
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/actuator/prometheus"
+        prometheus.io/port: "8081"
     spec:
       containers:
       - name: hello-world-api
@@ -18,4 +22,3 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8081
-        
