@@ -16,4 +16,4 @@ spec:
       - name: hello-world-api
         image: 145023105377.dkr.ecr.us-east-1.amazonaws.com/hello-world-api
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
